@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>JavaScript Interactive Demo</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Interactive Features</h2>
+
+    <!-- Part 1: Light/Dark Mode Toggle -->
+    <button id="modeToggle">Toggle Dark Mode 🌙</button>
+
+    <!-- Part 2: Counter Game -->
+    <div class="counter">
+      <p>Counter: <span id="countValue">0</span></p>
+      <button id="incrementBtn">Increment</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </section>
+
+  <!-- Part 3: FAQ Section -->
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript is a programming language used to make web pages dynamic and interactive.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">Why learn JavaScript?</h3>
+      <p class="faq-answer hidden">It’s the most widely used language for front-end web development and beyond.</p>
+    </div>
+  </section>
+
+  <!-- Part 4: Form Validation -->
+  <section id="form">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name"></label>
+      <small class="error" id="nameError"></small>
+
+      <label>Email: <input type="text" id="email"></label>
+      <small class="error" id="emailError"></small>
+
+      <label>Password: <input type="password" id="password"></label>
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Interactive JS Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
